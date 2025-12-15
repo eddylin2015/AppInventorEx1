@@ -1,8 +1,8 @@
 "# AppInventorEx1" 
 
-![主介面](https://raw.githubusercontent.com/eddylin2015/AppInventorEx1/refs/heads/master/img/design.png)
+![主介面](https://github.com/eddylin2015/AppInventorEx1/blob/main/img/design.png?raw=true)
 
-![主介面](https://raw.githubusercontent.com/eddylin2015/AppInventorEx1/refs/heads/master/img/CodeBlock1.png)
+![CodeBlock1](https://github.com/eddylin2015/AppInventorEx1/blob/main/img/CodeBlock1.png?raw=true)
 
-![主介面](https://raw.githubusercontent.com/eddylin2015/AppInventorEx1/refs/heads/master/img/CodeBlock2.png)
+![CodeBlock2](https://github.com/eddylin2015/AppInventorEx1/blob/main/img/CodeBlock2.png?raw=true)
 
