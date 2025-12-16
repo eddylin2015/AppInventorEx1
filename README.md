@@ -32,12 +32,12 @@ CurrPM3="1.mp3" # Current MP3 file
  * SetTimeVal:設定主計時 -1 IGNORE
  * */
 function initVariables(SetTimeVal=-1){
-    if(SetTimeVal>-1)
-       time=SetTimeVal;
-    page[1-9]=0;
-    Clock1.enble=false ;
-    Clock_page[1-9].enble=false;
-    Sound_Stop();
+    if SetTimeVal>-1
+       time=SetTimeVal
+    page[1-9]=0
+    Clock1.enble=false 
+    Clock_page[1-9].enble=false
+    Sound_Stop()
 }
 /*****
  * 主計時 
@@ -80,7 +80,7 @@ function Clock_page1.Timer()
     PgaeX(1,17)
     Temp=GetPageCnt(1)
     if Temp==1:
-       PlayMP3("1.mp3","On a sunny hill,")
+       PlayMP3("1.mp3","On a sunny hill")
     else if Temp==5
        TextBox1.Text="Her patched."
     else if Temp==8
@@ -141,15 +141,15 @@ function ResetAndPlay(){
  * Pause MP3
  * ref: Curr_PM3 
  */ 
-function PauseMP3(mp3_){}
-function PlayMP3(mp3_,message){}
-function SetPageTimer(PageTimer_idx,on_off){}
-function StopAllSound(){}
-function StopAllTimer(){}
-function SetAllPageCnt(val=0){}
-function SetPageCnt(PageCnt_idx,val=0){}
-function IncPageCnt(PageCnt_idx){}
-function GetPageCnt(PageCnt_idx){}
+function PauseMP3(mp3_){/*code here*/}
+function PlayMP3(mp3_,message){/*code here*/}
+function SetPageTimer(PageTimer_idx,on_off){/*code here*/}
+function StopAllSound(){/*code here*/}
+function StopAllTimer(){/*code here*/}
+function SetAllPageCnt(val=0){/*code here*/}
+function SetPageCnt(PageCnt_idx,val=0){/*code here*/}
+function IncPageCnt(PageCnt_idx){/*code here*/}
+function GetPageCnt(PageCnt_idx){/*code here*/}
 ```
 
 ## Flowchart
