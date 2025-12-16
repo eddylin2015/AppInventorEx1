@@ -59,6 +59,51 @@ function Clock_page1.Timer()
     else if Temp==5
        TextBox1.Text="Her patched."
 }
+function StartBtn(){
+    VA2.visible=false
+    VA1.Visible=true
+    initVariable(0)
+    Clock1.enable=true
+}
+function PlayNext(){
+    if time<9
+      initVariable(time)
+      HA1.image=f"{time}.png"
+      Clock1.enable=true
+}
+function PlayPrev(){
+    if time>1
+      time-=2
+      initVariable(time)
+      HA1.image=f"{time}.png"
+      Clock1.enable=true
+}
+function PauseAndPlay(){
+    SO++
+    if SO % 2==1
+        BTN_SO.image="SO2.png"
+        PauseMP3(CurrPM3)
+        SetPageTimer(time，false)
+    else
+        BTN_SO.image="SO1.png"
+        PlayMP3(CurrPM3，"None")
+        SetPageTimer(time，true)
+}
+function ResetAndPlay(){
+    initVariables(0)
+    VA1.visible=false
+    VA2.image="0.jpg"
+    VA2.visible=true
+}
+function PauseMP3(x){}
+function PlayMP3(x,y){}
+function SetPageTimer(x,y){}
+function Sound_Stop(){}
+function Time_Stop(){}
+function SetAllPageCnt(val=0){}
+function SetPageCnt(x,val=0){}
+function IncPageCnt(x){}
+function GetPageCnt(x){}
 ```
 
 ![CodeBlock1](https://github.com/eddylin2015/AppInventorEx1/blob/main/img/CodeBlock1.png?raw=true)
