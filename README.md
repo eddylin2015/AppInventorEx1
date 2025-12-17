@@ -14,16 +14,16 @@
 /************
 * Globle Varibles
 *************/
-time =0  # 主計時
-page1=0  # Page1計時
-page2=0
-page3=0
-page4=0
-page5=0
-page6=0
-page7=0
-page8=0
-page9=0
+time =0  # 故事主綫累計器
+page1=0  # 頁Page1累計器
+page2=0  # 頁Page2累計器
+page3=0  # 頁Page3累計器
+page4=0  # 頁Page4累計器
+page5=0  # 頁Page5累計器
+page6=0  # 頁Page6累計器
+page7=0  # 頁Page7累計器
+page8=0  # 頁Page8累計器
+page9=0  # 頁Page9累計器
 SO=0     # Pause 1 , Play 0
 CurrPM3="1.mp3" # Current MP3 file
 
@@ -40,46 +40,46 @@ function initVariables(SetTimeVal=-1){
     Sound_Stop()
 }
 /*****
- * 主計時 
+ * 主計時:換頁功能
  * inerval=2000
  */
 Clock1.Timer(){
     if time<=8
         time++
     else
-        time=9
-    HA1.image=f"{time}.png"
-    Clock1.enable=false
+        time=9    
+    HA1.image=f"{time}.png" # 換頁
+    Clock1.enable=false     # 暫停主綫播放
     if time==1
-       Clock_page1.enable=true
+       Clock_page1.enable=true # 第一頁播放
     else if time==2
-       Clock_page2.enable=true
+       Clock_page2.enable=true # 第二頁播放
     else if time==3
-       Clock_page3.enable=true
+       Clock_page3.enable=true # 第三頁播放
 }
 /***
- * Page計時控制器 
+ * PageX 計時控制器 
  * inerval=2000
- * x:Page_idx
- * y:MaxNum
+ * x:Page_idx 第几頁
+ * y:MaxNum   最大累計數之后,停止播放, 啟動主綫換下一頁。
  */
 function PgaeX(x,y){
    if GetPageCnt(x)<=y
       IncPageCnt(x)
     else
-      initVariables(x)
-      TextBox1.Text=""
-      Clock1.enable=true
-      SetPageTimer(x,false)
+      initVariables(x)     # 設主綫計數器time 設為x, 全局變數Page清零, 音效停止.
+      TextBox1.Text=""     # 字幕清空
+      Clock1.enable=true   # 啟動主綫換下一頁
+      SetPageTimer(x,false)# 當前頁面支綫停止
 }
 /***
- * 畫面1 字幕及MP3
+ * 支綫頁面播放畫面1: 字幕及MP3
  */ 
 function Clock_page1.Timer()
 {
-    PgaeX(1,17)
-    Temp=GetPageCnt(1)
-    if Temp==1:
+    PgaeX(1,17)          # 頁面1, 17秒, 計數器Page1++
+    Temp=GetPageCnt(1)   # 取得計數器Page1值
+    if Temp==1:          
        PlayMP3("1.mp3","On a sunny hill")
     else if Temp==5
        TextBox1.Text="Her patched."
@@ -96,7 +96,7 @@ function StartBtn(){
     Clock1.enable=true
 }
 /***
- * Next鍵
+ * 下一頁鍵
  */ 
 function PlayNext(){
     if time<9
@@ -105,7 +105,7 @@ function PlayNext(){
       Clock1.enable=true
 }
 /***
- * 返回鍵
+ * 上一頁鍵
  */ 
 function PlayPrev(){
     if time>1
@@ -115,7 +115,7 @@ function PlayPrev(){
       Clock1.enable=true
 }
 /***
- * Pause鍵
+ * 暫停鍵
  */ 
 function PauseAndPlay(){
     SO++
@@ -129,7 +129,7 @@ function PauseAndPlay(){
         SetPageTimer(time，true)
 }
 /***
- * Reset鍵
+ * 重置鍵
  */ 
 function ResetAndPlay(){
     initVariables(0)
@@ -142,13 +142,36 @@ function ResetAndPlay(){
  * ref: Curr_PM3 
  */ 
 function PauseMP3(mp3_){/*code here*/}
+/*
+** 播放加字幕
+**/
 function PlayMP3(mp3_,message){/*code here*/}
+/*
+*
+**/
 function SetPageTimer(PageTimer_idx,on_off){/*code here*/}
+/**
+*
+**/
 function StopAllSound(){/*code here*/}
+/*
+ ***/
 function StopAllTimer(){/*code here*/}
+/**
+*
+**/
 function SetAllPageCnt(val=0){/*code here*/}
+/**
+*
+**/
 function SetPageCnt(PageCnt_idx,val=0){/*code here*/}
+/**
+*
+**/
 function IncPageCnt(PageCnt_idx){/*code here*/}
+/**
+*
+**/
 function GetPageCnt(PageCnt_idx){/*code here*/}
 ```
 
