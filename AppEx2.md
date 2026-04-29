@@ -191,9 +191,9 @@ function GetPageCnt(PageCnt_idx){/*code here*/}
 
 ## Flowchart
 
-![CodeBlock1](https://github.com/eddylin2015/AppInventorEx1/blob/main/img/CodeBlock1.png?raw=true)
+![CodeBlock1](https://github.com/eddylin2015/AppInventorEx1/blob/main/img/mainscrblocks.png?raw=true)
 
-![CodeBlock2](https://github.com/eddylin2015/AppInventorEx1/blob/main/img/CodeBlock2.png?raw=true)
+![CodeBlock2](https://github.com/eddylin2015/AppInventorEx1/blob/main/img/game1blocks.png?raw=true)
 
 ## Conclusion
 
