@@ -1,4 +1,7 @@
 # AppInventor Ex 2 
+## Draft
+
+![Draft](https://github.com/eddylin2015/AppInventorEx1/blob/main/img/Ex2Draft01.png?raw=true)
 
 ## Main Interface
 
