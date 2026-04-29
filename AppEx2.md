@@ -10,6 +10,9 @@ OpenScreenWithParameter
 
 CloseScreenWithResult
 
+PoseNetExtension    
+https://mit-cml.github.io/extensions/
+
 * mainsrceen
 * game1
 * game2
