@@ -60,17 +60,36 @@ when Game1.initalize do
 end do
 
 when PosenetExtension1.PoseUpdated do
-
+    if not is list empty? list(PosenetExtension1.Nose)
+        call Flute.MoveTo((selecct list item in PosenetExtension1.Nose *1.3)[1],Canvas1.Height-60)
 end do
 
 When Trash.CollidedWith(other) do
+    if other== Flute
+        set Trash.y=0
+        set Trash.x= random(50...350-50)
+         set score+=20
+         set ScoreTxt.Text=score
+         call Sound_S.Play
+         call Sound_S.Play
+         call UpdateBar
 
 end do
+
 When Trash2.CollidedWith(other) do
 
 end do
 
+Procedure UpdateBar(score) do
+
+end do
 when Clock1.times do
+   Trash.Y+=10
+   Trash2.Y+=20
+   if Trash.Y > canvas1.height-60
+       score-=10
+   if Trash2.Y > canvas1.height-60
+       score-=10
    if score>= 100 || score<0
       close screen with value result(score)
 end do
@@ -87,4 +106,4 @@ end do
 
 ## Conclusion
 
-記錄moonteam近期作品.
+記錄moonteam近期作品,記錄編程重點.
