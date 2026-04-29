@@ -10,6 +10,14 @@ OpenScreenWithParameter
 
 CloseScreenWithResult
 
+* mainsrceen
+* game1
+* game2
+* game3
+* game4
+* winsrc
+* losesrc
+
 ## Debug ISO / Android with wifi link
 
 ## Build Apk for Android
