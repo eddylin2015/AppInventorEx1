@@ -35,13 +35,39 @@ Open another Screen With start value screenName Game1
 
 when Screen3 OtherScreenClosed(otherScreenName,result) do
    if otherScreenName=='Game1' then
-       GameScores[1]=result
+       GameScores[1]=result # mark
        if result<100 then
-          GameScores[5]+=1
+          GameScores[5]+=1  # lose count
+   ***
+   for i in [1,2,3,4]
+      if GameScores[i]>=100
+          countOfWin++
+      else
+          countOfLose+=GameScores[i+4]
    if countOfWin>=4
         Open another Screen screenName winscr 
    if countOfLose>=2
         Open another Screen screenName losescr 
+end do
+when Game1menu.click do
+   if countOfWin>=0
+      open Game1 scr
+   showmessage("請按次序通關!")
+end do
+when Game2menu.click do
+   if countOfWin>=1
+      open Game2 scr
+   showmessage("請按次序通關!")
+end do
+when Game3menu.click do
+   if countOfWin>=2
+      open Game3 scr
+   showmessage("請按次序通關!")
+end do
+when Game4menu.click do
+   if countOfWin>=
+      open Game4 scr
+   showmessage("請按次序通關!")
 end do
 ```
 ```js
