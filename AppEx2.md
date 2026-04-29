@@ -4,6 +4,12 @@
 
 ![主介面](https://github.com/eddylin2015/AppInventorEx1/blob/main/img/F6APROJ260429.png?raw=true)
 
+### 場景之間切換及數據交換
+
+OpenScreenWithParameter
+
+CloseScreenWithResult
+
 ## Debug ISO / Android with wifi link
 
 ## Build Apk for Android
