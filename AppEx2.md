@@ -18,9 +18,15 @@ CloseScreenWithResult
 * winsrc
 * losesrc
 
-## Debug ISO / Android with wifi link
+## Blocks
 
-## Build Apk for Android
+### mainscreen
+
+![CodeBlock1](https://github.com/eddylin2015/AppInventorEx1/blob/main/img/mainscrblocks.png?raw=true)
+
+### game1
+
+![CodeBlock2](https://github.com/eddylin2015/AppInventorEx1/blob/main/img/game1blocks.png?raw=true)
 
 ## Code
 
@@ -189,11 +195,6 @@ function IncPageCnt(PageCnt_idx){/*code here*/}
 function GetPageCnt(PageCnt_idx){/*code here*/}
 ```
 
-## Flowchart
-
-![CodeBlock1](https://github.com/eddylin2015/AppInventorEx1/blob/main/img/mainscrblocks.png?raw=true)
-
-![CodeBlock2](https://github.com/eddylin2015/AppInventorEx1/blob/main/img/game1blocks.png?raw=true)
 
 ## Conclusion
 
