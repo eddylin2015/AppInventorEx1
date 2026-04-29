@@ -9,21 +9,69 @@
 
 ### 場景之間切換及數據交換
 
-OpenScreenWithParameter
-
-CloseScreenWithResult
-
-PoseNetExtension    
-https://mit-cml.github.io/extensions/
-
-* mainsrceen
+* startscreen
+* introduct
+* loading
+* screen3(main menu）
 * game1
+  PoseNetExtension https://mit-cml.github.io/extensions/
 * game2
 * game3
 * game4
 * winsrc
 * losesrc
+  
+```js
+/************
+* main menu (screen3)
+* Globle Varibles
+*************/
+GameScores=[0,0,0,0,0,0,0,0]
+countOfWin=0
+countOfLose=0
+Open another Screen With start value screenName Game1    
+                                     startValue 1   
 
+when Screen3 OtherScreenClosed(otherScreenName,result) do
+   if otherScreenName=='Game1' then
+       GameScores[1]=result
+       if result<100 then
+          GameScores[5]+=1
+   if countOfWin>=4
+        Open another Screen screenName winscr 
+   if countOfLose>=2
+        Open another Screen screenName losescr 
+end do
+```
+```js
+/************
+* Game1
+* Globle Varibles
+*************/
+global PosenetExtension1
+global Trash,Trash2,Flute
+score=0
+
+when Game1.initalize do
+
+end do
+
+when PosenetExtension1.PoseUpdated do
+
+end do
+
+When Trash.CollidedWith(other) do
+
+end do
+When Trash2.CollidedWith(other) do
+
+end do
+
+when Clock1.times do
+   if score>= 100 || score<0
+      close screen with value result(score)
+end do
+```
 ## Blocks
 
 ### mainscreen
