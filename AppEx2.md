@@ -135,6 +135,10 @@ end do
 
 ![CodeBlock2](https://github.com/eddylin2015/AppInventorEx1/blob/main/img/game1blocks.png?raw=true)
 
+## apk
+
+https://ai2.appinventor.mit.edu/b/5h5gb
+
 ## Conclusion
 
 記錄moonteam近期作品,記錄編程重點.
