@@ -85,6 +85,11 @@ when Game1.initalize do
     set Clock1.TimerEnabled=true
 end do
 
+when Game1.BackPress do
+      close screen with value result(0)
+end do
+
+
 when PosenetExtension1.PoseUpdated do
     if not is list empty? list(PosenetExtension1.Nose)
         call Flute.MoveTo((selecct list item in PosenetExtension1.Nose *1.3)[1],Canvas1.Height-60)
