@@ -5,10 +5,18 @@ Boomerang Math and Physics Model
 The physics of a boomerang is a beautiful intersection of aerodynamics and gyroscopic precession. To model it mathematically, you have to treat the boomerang as both a flying wing and a spinning top.
 
 1. The Airfoil (Lift Force)
+
+   $$L = \frac{1}{2} \rho v^2 A C_L$$
+   
 2. Differential Lift
-3. Gyroscopic Precession
+
+   
+4. Gyroscopic Precession
+
+   $$\tau = \Omega \times L_{ang}$$
 
 1. Dedicated Boomerang Simulators
+   
 2. General Math & Physics Engines
 
 MATLAB / Simulink	Research & Scripting	Excellent for solving the differential equations of motion and plotting 3D vectors.
