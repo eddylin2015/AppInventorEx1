@@ -137,7 +137,6 @@ end do
 
 ## apk
 
-https://ai2.appinventor.mit.edu/b/5h5gb
 
 ## Conclusion
 
