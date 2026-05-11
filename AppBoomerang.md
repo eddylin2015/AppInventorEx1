@@ -36,3 +36,5 @@ Update State: Use the Gyroscopic Precession formula to change the boomerang's or
 Step Forward: Update the position $(x, y, z)$ and repeat.
 
 Pro Tip: If you are a programmer, I recommend starting with Python. It has the best libraries (matplotlib for 3D paths and numpy for the matrix math) to visualize how changing the "threw angle" or "spin rate" affects the return circle.
+
+![主介面](https://github.com/eddylin2015/AppInventorEx1/blob/main/img/Boomerang01.png?raw=true)
