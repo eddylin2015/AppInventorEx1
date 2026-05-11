@@ -6,7 +6,7 @@
 #嘉諾撒聖心英文中學
 #澳門坊眾學校
 
-![主介面](https://github.com/eddylin2015/AppInventorEx1/blob/main/img/boothc240120.jpg?raw=true)
+![主介面](https://github.com/eddylin2015/AppInventorEx1/blob/main/img/boothc240120.png?raw=true)
 
 ![主介面](https://github.com/eddylin2015/AppInventorEx1/blob/main/img/mscgbayouth01.jpg?raw=true)
 
